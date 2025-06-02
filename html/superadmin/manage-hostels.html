@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Matrix lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Matrix admin lite design, Matrix admin lite dashboard bootstrap 5 dashboard template"
+    />
+    <meta
+      name="description"
+      content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework"
+    />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Matrix Admin Lite Free Versions Template by WrapPixel</title>
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicon.png"
+    />
+    <!-- Custom CSS -->
+    <link href="../assets/libs/flot/css/float-chart.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+      <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+      </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div
+      id="main-wrapper"
+      data-layout="vertical"
+      data-navbarbg="skin5"
+      data-sidebartype="full"
+      data-sidebar-position="absolute"
+      data-header-position="absolute"
+      data-boxed-layout="full"
+    >
+      <!-- ============================================================== -->
+      <!-- Topbar header - style you can find in pages.scss -->
+      <!-- ============================================================== -->
+      <header class="topbar" data-navbarbg="skin5">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+          <div class="navbar-header" data-logobg="skin5">
+            <!-- ============================================================== -->
+            <!-- Logo -->
+            <!-- ============================================================== -->
+            <a class="navbar-brand" href="index.html">
+              <!-- Logo icon -->
+              <b class="logo-icon ps-2">
+                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                <!-- Dark Logo icon -->
+                <img
+                  src="../assets/images/logo-icon.png"
+                  alt="homepage"
+                  class="light-logo"
+                  width="25"
+                />
+              </b>
+              <!--End Logo icon -->
+              <!-- Logo text -->
+              <span class="logo-text ms-2">
+                <!-- dark Logo text -->
+                <img
+                  src="../assets/images/logo-text.png"
+                  alt="homepage"
+                  class="light-logo"
+                />
+              </span>
+              <!-- Logo icon -->
+              <!-- <b class="logo-icon"> -->
+              <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+              <!-- Dark Logo icon -->
+              <!-- <img src="../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
+
+              <!-- </b> -->
+              <!--End Logo icon -->
+            </a>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Toggle which is visible on mobile only -->
+            <!-- ============================================================== -->
+            <a
+              class="nav-toggler waves-effect waves-light d-block d-md-none"
+              href="javascript:void(0)"
+              ><i class="ti-menu ti-close"></i
+            ></a>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End Logo -->
+          <!-- ============================================================== -->
+          <div
+            class="navbar-collapse collapse"
+            id="navbarSupportedContent"
+            data-navbarbg="skin5"
+          >
+            <!-- ============================================================== -->
+            <!-- toggle and nav items -->
+            <!-- ============================================================== -->
+            <ul class="navbar-nav float-start me-auto">
+              <li class="nav-item d-none d-lg-block">
+                <a
+                  class="nav-link sidebartoggler waves-effect waves-light"
+                  href="javascript:void(0)"
+                  data-sidebartype="mini-sidebar"
+                  ><i class="mdi mdi-menu font-24"></i
+                ></a>
+              </li>
+              <!-- ============================================================== -->
+              <!-- create new -->
+              <!-- ============================================================== -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="d-none d-md-block"
+                    >Create New <i class="fa fa-angle-down"></i
+                  ></span>
+                  <span class="d-block d-md-none"
+                    ><i class="fa fa-plus"></i
+                  ></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- ============================================================== -->
+              <!-- Search -->
+              <!-- ============================================================== -->
+              <li class="nav-item search-box">
+                <a
+                  class="nav-link waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  ><i class="mdi mdi-magnify fs-4"></i
+                ></a>
+                <form class="app-search position-absolute">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search &amp; enter"
+                  />
+                  <a class="srh-btn"><i class="mdi mdi-window-close"></i></a>
+                </form>
+              </li>
+            </ul>
+            <!-- ============================================================== -->
+            <!-- Right side toggle and nav items -->
+            <!-- ============================================================== -->
+            <ul class="navbar-nav float-end">
+              <!-- ============================================================== -->
+              <!-- Comment -->
+              <!-- ============================================================== -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="mdi mdi-bell font-24"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- ============================================================== -->
+              <!-- End Comment -->
+              <!-- ============================================================== -->
+              <!-- ============================================================== -->
+              <!-- Messages -->
+              <!-- ============================================================== -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle waves-effect waves-dark"
+                  href="#"
+                  id="2"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="font-24 mdi mdi-comment-processing"></i>
+                </a>
+                <ul
+                  class="
+                    dropdown-menu dropdown-menu-end
+                    mailbox
+                    animated
+                    bounceInDown
+                  "
+                  aria-labelledby="2"
+                >
+                  <ul class="list-style-none">
+                    <li>
+                      <div class="">
+                        <!-- Message -->
+                        <a href="javascript:void(0)" class="link border-top">
+                          <div class="d-flex no-block align-items-center p-10">
+                            <span
+                              class="
+                                btn btn-success btn-circle
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                              "
+                              ><i class="mdi mdi-calendar text-white fs-4"></i
+                            ></span>
+                            <div class="ms-2">
+                              <h5 class="mb-0">Event today</h5>
+                              <span class="mail-desc"
+                                >Just a reminder that event</span
+                              >
+                            </div>
+                          </div>
+                        </a>
+                        <!-- Message -->
+                        <a href="javascript:void(0)" class="link border-top">
+                          <div class="d-flex no-block align-items-center p-10">
+                            <span
+                              class="
+                                btn btn-info btn-circle
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                              "
+                              ><i class="mdi mdi-settings fs-4"></i
+                            ></span>
+                            <div class="ms-2">
+                              <h5 class="mb-0">Settings</h5>
+                              <span class="mail-desc"
+                                >You can customize this template</span
+                              >
+                            </div>
+                          </div>
+                        </a>
+                        <!-- Message -->
+                        <a href="javascript:void(0)" class="link border-top">
+                          <div class="d-flex no-block align-items-center p-10">
+                            <span
+                              class="
+                                btn btn-primary btn-circle
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                              "
+                              ><i class="mdi mdi-account fs-4"></i
+                            ></span>
+                            <div class="ms-2">
+                              <h5 class="mb-0">Pavan kumar</h5>
+                              <span class="mail-desc"
+                                >Just see the my admin!</span
+                              >
+                            </div>
+                          </div>
+                        </a>
+                        <!-- Message -->
+                        <a href="javascript:void(0)" class="link border-top">
+                          <div class="d-flex no-block align-items-center p-10">
+                            <span
+                              class="
+                                btn btn-danger btn-circle
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                              "
+                              ><i class="mdi mdi-link fs-4"></i
+                            ></span>
+                            <div class="ms-2">
+                              <h5 class="mb-0">Luanch Admin</h5>
+                              <span class="mail-desc"
+                                >Just see the my new admin!</span
+                              >
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </ul>
+              </li>
+              <!-- ============================================================== -->
+              <!-- End Messages -->
+              <!-- ============================================================== -->
+
+              <!-- ============================================================== -->
+              <!-- User profile and search -->
+              <!-- ============================================================== -->
+              <li class="nav-item dropdown">
+                <a
+                  class="
+                    nav-link
+                    dropdown-toggle
+                    text-muted
+                    waves-effect waves-dark
+                    pro-pic
+                  "
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="../assets/images/users/1.jpg"
+                    alt="user"
+                    class="rounded-circle"
+                    width="31"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end user-dd animated"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    ><i class="mdi mdi-account me-1 ms-1"></i> My Profile</a
+                  >
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    ><i class="mdi mdi-wallet me-1 ms-1"></i> My Balance</a
+                  >
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    ><i class="mdi mdi-email me-1 ms-1"></i> Inbox</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    ><i class="mdi mdi-settings me-1 ms-1"></i> Account
+                    Setting</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    ><i class="fa fa-power-off me-1 ms-1"></i> Logout</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <div class="ps-4 p-10">
+                    <a
+                      href="javascript:void(0)"
+                      class="btn btn-sm btn-success btn-rounded text-white"
+                      >View Profile</a
+                    >
+                  </div>
+                </ul>
+              </li>
+              <!-- ============================================================== -->
+              <!-- User profile and search -->
+              <!-- ============================================================== -->
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- ============================================================== -->
+      <!-- End Topbar header -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <aside class="left-sidebar" data-sidebarbg="skin5">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav">
+            <ul id="sidebarnav" class="pt-4">
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="../index.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-view-dashboard"></i
+                  ><span class="hide-menu">Dashboard</span></a
+                >
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="../charts.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-chart-bar"></i
+                  ><span class="hide-menu">Charts</span></a
+                >
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="../widgets.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-chart-bubble"></i
+                  ><span class="hide-menu">Widgets</span></a
+                >
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="../tables.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-border-inside"></i
+                  ><span class="hide-menu">Tables</span></a
+                >
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="../grid.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-blur-linear"></i
+                  ><span class="hide-menu">Full Width</span></a
+                >
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-security"></i
+                  ><span class="hide-menu">Super Admin</span></a
+                >
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a href="overview.html" class="sidebar-link"
+                      ><i class="mdi mdi-view-dashboard-outline"></i
+                      ><span class="hide-menu">Dashboard Overview</span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="manage-hostels.html" class="sidebar-link"
+                      ><i class="mdi mdi-hotel"></i
+                      ><span class="hide-menu">Manage Hostels</span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="hostel-amenities.html" class="sidebar-link"
+                      ><i class="mdi mdi-spray-bottle"></i
+                      ><span class="hide-menu">Hostel Amenities</span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="mess-management.html" class="sidebar-link"
+                      ><i class="mdi mdi-silverware-variant"></i
+                      ><span class="hide-menu">Mess Management</span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="gym-facilities.html" class="sidebar-link"
+                      ><i class="mdi mdi-dumbbell"></i
+                      ><span class="hide-menu">Gym Facilities</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-receipt"></i
+                  ><span class="hide-menu">Forms </span></a
+                >
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a href="../form-basic.html" class="sidebar-link"
+                      ><i class="mdi mdi-note-outline"></i
+                      ><span class="hide-menu"> Form Basic </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../form-wizard.html" class="sidebar-link"
+                      ><i class="mdi mdi-note-plus"></i
+                      ><span class="hide-menu"> Form Wizard </span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="../pages-buttons.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-relative-scale"></i
+                  ><span class="hide-menu">Buttons</span></a
+                >
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-face"></i
+                  ><span class="hide-menu">Icons </span></a
+                >
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a href="../icon-material.html" class="sidebar-link"
+                      ><i class="mdi mdi-emoticon"></i
+                      ><span class="hide-menu"> Material Icons </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../icon-fontawesome.html" class="sidebar-link"
+                      ><i class="mdi mdi-emoticon-cool"></i
+                      ><span class="hide-menu"> Font Awesome Icons </span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="../pages-elements.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-pencil"></i
+                  ><span class="hide-menu">Elements</span></a
+                >
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-move-resize-variant"></i
+                  ><span class="hide-menu">Addons </span></a
+                >
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a href="../index2.html" class="sidebar-link"
+                      ><i class="mdi mdi-view-dashboard"></i
+                      ><span class="hide-menu"> Dashboard-2 </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../pages-gallery.html" class="sidebar-link"
+                      ><i class="mdi mdi-multiplication-box"></i
+                      ><span class="hide-menu"> Gallery </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../pages-calendar.html" class="sidebar-link"
+                      ><i class="mdi mdi-calendar-check"></i
+                      ><span class="hide-menu"> Calendar </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../pages-invoice.html" class="sidebar-link"
+                      ><i class="mdi mdi-bulletin-board"></i
+                      ><span class="hide-menu"> Invoice </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../pages-chat.html" class="sidebar-link"
+                      ><i class="mdi mdi-message-outline"></i
+                      ><span class="hide-menu"> Chat Option </span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-account-key"></i
+                  ><span class="hide-menu">Authentication </span></a
+                >
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a href="../authentication-login.html" class="sidebar-link"
+                      ><i class="mdi mdi-all-inclusive"></i
+                      ><span class="hide-menu"> Login </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../authentication-register.html" class="sidebar-link"
+                      ><i class="mdi mdi-all-inclusive"></i
+                      ><span class="hide-menu"> Register </span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-alert"></i
+                  ><span class="hide-menu">Errors </span></a
+                >
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a href="../error-403.html" class="sidebar-link"
+                      ><i class="mdi mdi-alert-octagon"></i
+                      ><span class="hide-menu"> Error 403 </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../error-404.html" class="sidebar-link"
+                      ><i class="mdi mdi-alert-octagon"></i
+                      ><span class="hide-menu"> Error 404 </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../error-405.html" class="sidebar-link"
+                      ><i class="mdi mdi-alert-octagon"></i
+                      ><span class="hide-menu"> Error 405 </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="../error-500.html" class="sidebar-link"
+                      ><i class="mdi mdi-alert-octagon"></i
+                      ><span class="hide-menu"> Error 500 </span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item p-3">
+                <a
+                  href="https://github.com/wrappixel/matrix-admin-bt5"
+                  target="_blank"
+                  class="
+                    w-100
+                    btn btn-cyan
+                    d-flex
+                    align-items-center
+                    text-white
+                  "
+                  ><i class="mdi mdi-cloud-download font-20 me-2"></i>Download
+                  Free</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!-- ============================================================== -->
+      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Page wrapper  -->
+      <!-- ============================================================== -->
+      <div class="page-wrapper">
+        <!-- Breadcrumb -->
+        <div class="page-breadcrumb">
+          <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+              <h4 class="page-title">Manage Hostels</h4>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="overview.html">Super Admin</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Manage Hostels
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Breadcrumb -->
+
+        <div class="container-fluid">
+          <!-- ============================================================== -->
+          <!-- Start Page Content -->
+          <!-- ============================================================== -->
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title">Hostel List</h5>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostelModal" id="addNewHostelBtn">
+                  Add New Hostel
+                </button>
+              </div>
+
+              <!-- Search and Filter Row -->
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="searchHostelInput" placeholder="Search Hostels...">
+                </div>
+                <div class="col-md-2">
+                  <select id="filterStatus" class="form-select">
+                    <option value="">All Statuses</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <select id="filterHostelType" class="form-select">
+                    <option value="">All Types</option>
+                    <option value="Boys">Boys</option>
+                    <option value="Girls">Girls</option>
+                    <option value="Co-ed">Co-ed</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <select id="filterHasGym" class="form-select">
+                    <option value="">Gym (Any)</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-info w-100" id="applyFiltersBtn">Apply Filters</button>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table id="hostelsTable" class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Hostel Name</th>
+                      <th>Owner Name</th>
+                      <th>Email</th>
+                      <th>Phone</th>
+                      <th>Address</th>
+                      <th>Has Gym?</th>
+                      <th>Hostel Type</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="hostelsTableBody">
+                    <!-- Hostel rows will be populated by JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add/Edit Hostel Modal -->
+          <div class="modal fade" id="hostelModal" tabindex="-1" aria-labelledby="hostelModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="hostelModalLabel">Add New Hostel</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="hostelForm">
+                    <input type="hidden" id="hostelId">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="hostelName" class="form-label">Hostel Name</label>
+                        <input type="text" class="form-control" id="hostelName" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="ownerName" class="form-label">Owner Name</label>
+                        <input type="text" class="form-control" id="ownerName" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="address" class="form-label">Address</label>
+                      <textarea class="form-control" id="address" rows="3" required></textarea>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <label for="hasGym" class="form-label">Has Gym?</label>
+                        <select class="form-select" id="hasGym">
+                          <option value="true">Yes</option>
+                          <option value="false" selected>No</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="hostelType" class="form-label">Hostel Type</label>
+                        <select class="form-select" id="hostelType">
+                          <option value="Boys">Boys</option>
+                          <option value="Girls">Girls</option>
+                          <option value="Co-ed" selected>Co-ed</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="status" class="form-label">Status</label>
+                        <select class="form-select" id="status">
+                          <option value="Active" selected>Active</option>
+                          <option value="Inactive">Inactive</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary" id="saveHostelBtn" form="hostelForm">Save Hostel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End PAge Content -->
+          <!-- ============================================================== -->
+        </div>
+      </div>
+      <!-- ============================================================== -->
+      <!-- End Page wrapper  -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!-- <script src="../dist/js/pages/dashboards/dashboard1.js"></script> -->
+    <!-- Charts js Files -->
+    <script src="../assets/libs/flot/excanvas.js"></script>
+    <script src="../assets/libs/flot/jquery.flot.js"></script>
+    <script src="../assets/libs/flot/jquery.flot.pie.js"></script>
+    <script src="../assets/libs/flot/jquery.flot.time.js"></script>
+    <script src="../assets/libs/flot/jquery.flot.stack.js"></script>
+    <script src="../assets/libs/flot/jquery.flot.crosshair.js"></script>
+    <script src="../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="../dist/js/pages/chart/chart-page-init.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Mock database for hostels
+        let mockHostelsDb = [
+          { id: "hostel_001", hostelName: "Sunshine Hostel", ownerName: "Raj Patel", email: "raj.patel@example.com", phone: "9876543210", address: "123 Main Street, Anytown, AN 12345", hasGym: true, hostelType: "Co-ed", status: "Active", createdAt: "2023-10-01T10:00:00Z", updatedAt: "2023-10-26T14:30:00Z" },
+          { id: "hostel_002", hostelName: "Moonlight PG", ownerName: "Priya Sharma", email: "priya.sharma@example.com", phone: "9876543211", address: "456 Oak Avenue, Anytown, AN 12345", hasGym: false, hostelType: "Girls", status: "Active", createdAt: "2023-09-15T12:00:00Z", updatedAt: "2023-10-20T10:00:00Z" },
+          { id: "hostel_003", hostelName: "Star Boys Hostel", ownerName: "Amit Singh", email: "amit.singh@example.com", phone: "9876543212", address: "789 Pine Lane, Anytown, AN 12345", hasGym: true, hostelType: "Boys", status: "Inactive", createdAt: "2023-08-01T09:00:00Z", updatedAt: "2023-09-01T11:00:00Z" },
+          { id: "hostel_004", hostelName: "Galaxy Inn", ownerName: "Sunita Reddy", email: "sunita.reddy@example.com", phone: "9876543213", address: "101 Galaxy Road, Starcity, SC 67890", hasGym: false, hostelType: "Co-ed", status: "Active", createdAt: "2023-11-01T11:00:00Z", updatedAt: "2023-11-10T15:00:00Z" },
+          { id: "hostel_005", hostelName: "Green Valley PG", ownerName: "Vikram Mehta", email: "vikram.mehta@example.com", phone: "9876543214", address: "222 Valley View, Greentown, GT 34567", hasGym: true, hostelType: "Boys", status: "Active", createdAt: "2022-05-10T08:30:00Z", updatedAt: "2023-10-15T16:00:00Z" }
+        ];
+
+        const hostelModal = new bootstrap.Modal(document.getElementById('hostelModal'));
+        const hostelForm = document.getElementById('hostelForm');
+        const hostelsTableBody = document.getElementById('hostelsTableBody');
+        const addNewHostelBtn = document.getElementById('addNewHostelBtn');
+        const hostelModalLabel = document.getElementById('hostelModalLabel');
+
+        const searchInput = document.getElementById('searchHostelInput');
+        const statusFilter = document.getElementById('filterStatus');
+        const typeFilter = document.getElementById('filterHostelType');
+        const gymFilter = document.getElementById('filterHasGym');
+        const applyFiltersBtn = document.getElementById('applyFiltersBtn');
+
+        function renderHostelsTable(hostelsToRender) {
+          hostelsTableBody.innerHTML = ''; // Clear existing rows
+          const hostels = hostelsToRender || mockHostelsDb;
+
+          if (hostels.length === 0) {
+            hostelsTableBody.innerHTML = '<tr><td colspan="9" class="text-center">No hostels found.</td></tr>';
+            return;
+          }
+
+          hostels.forEach(hostel => {
+            const row = hostelsTableBody.insertRow();
+            row.insertCell().textContent = hostel.hostelName;
+            row.insertCell().textContent = hostel.ownerName;
+            row.insertCell().textContent = hostel.email;
+            row.insertCell().textContent = hostel.phone;
+            row.insertCell().textContent = hostel.address;
+            row.insertCell().textContent = hostel.hasGym ? 'Yes' : 'No';
+            row.insertCell().textContent = hostel.hostelType;
+
+            const statusCell = row.insertCell();
+            const statusBadge = document.createElement('span');
+            statusBadge.textContent = hostel.status;
+            statusBadge.classList.add('badge', hostel.status === 'Active' ? 'bg-success' : 'bg-danger');
+            statusCell.appendChild(statusBadge);
+
+            const actionsCell = row.insertCell();
+            actionsCell.innerHTML = `
+              <button class="btn btn-sm btn-info edit-btn" data-id="${hostel.id}"><i class="mdi mdi-pencil"></i> Edit</button>
+              <button class="btn btn-sm btn-danger delete-btn" data-id="${hostel.id}"><i class="mdi mdi-delete"></i> Delete</button>
+            `;
+          });
+          addEventListenersToButtons();
+        }
+
+        function addEventListenersToButtons() {
+          document.querySelectorAll('.edit-btn').forEach(button => {
+            button.addEventListener('click', function () {
+              const hostelId = this.dataset.id;
+              const hostel = mockHostelsDb.find(h => h.id === hostelId);
+              if (hostel) {
+                hostelModalLabel.textContent = 'Edit Hostel';
+                document.getElementById('hostelId').value = hostel.id;
+                document.getElementById('hostelName').value = hostel.hostelName;
+                document.getElementById('ownerName').value = hostel.ownerName;
+                document.getElementById('email').value = hostel.email;
+                document.getElementById('phone').value = hostel.phone;
+                document.getElementById('address').value = hostel.address;
+                document.getElementById('hasGym').value = hostel.hasGym.toString();
+                document.getElementById('hostelType').value = hostel.hostelType;
+                document.getElementById('status').value = hostel.status;
+                hostelModal.show();
+              }
+            });
+          });
+
+          document.querySelectorAll('.delete-btn').forEach(button => {
+            button.addEventListener('click', function () {
+              const hostelId = this.dataset.id;
+              if (confirm('Are you sure you want to delete this hostel?')) {
+                mockHostelsDb = mockHostelsDb.filter(h => h.id !== hostelId);
+                renderHostelsTable();
+              }
+            });
+          });
+        }
+
+        addNewHostelBtn.addEventListener('click', function() {
+            hostelModalLabel.textContent = 'Add New Hostel';
+            hostelForm.reset();
+            document.getElementById('hostelId').value = ''; // Ensure ID is cleared for new entries
+            hostelModal.show();
+        });
+
+        hostelForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+          const id = document.getElementById('hostelId').value;
+          const hostelData = {
+            hostelName: document.getElementById('hostelName').value,
+            ownerName: document.getElementById('ownerName').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            address: document.getElementById('address').value,
+            hasGym: document.getElementById('hasGym').value === 'true',
+            hostelType: document.getElementById('hostelType').value,
+            status: document.getElementById('status').value,
+            updatedAt: new Date().toISOString()
+          };
+
+          if (id) { // Editing existing hostel
+            const index = mockHostelsDb.findIndex(h => h.id === id);
+            if (index !== -1) {
+              mockHostelsDb[index] = { ...mockHostelsDb[index], ...hostelData };
+            }
+          } else { // Adding new hostel
+            hostelData.id = 'hostel_' + Date.now().toString(); // Simple unique ID
+            hostelData.createdAt = new Date().toISOString();
+            mockHostelsDb.push(hostelData);
+          }
+          renderHostelsTable();
+          hostelModal.hide();
+          hostelForm.reset();
+        });
+
+        applyFiltersBtn.addEventListener('click', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const statusValue = statusFilter.value;
+            const typeValue = typeFilter.value;
+            const gymValue = gymFilter.value;
+
+            const filteredHostels = mockHostelsDb.filter(hostel => {
+                const matchesSearch = hostel.hostelName.toLowerCase().includes(searchTerm) ||
+                                      hostel.ownerName.toLowerCase().includes(searchTerm) ||
+                                      hostel.email.toLowerCase().includes(searchTerm) ||
+                                      hostel.address.toLowerCase().includes(searchTerm);
+                const matchesStatus = !statusValue || hostel.status === statusValue;
+                const matchesType = !typeValue || hostel.hostelType === typeValue;
+                const matchesGym = !gymValue || hostel.hasGym.toString() === gymValue;
+
+                return matchesSearch && matchesStatus && matchesType && matchesGym;
+            });
+            renderHostelsTable(filteredHostels);
+        });
+
+        // Initial render
+        renderHostelsTable();
+      });
+    </script>
+  </body>
+</html>
