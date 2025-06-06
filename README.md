@@ -211,3 +211,28 @@ Visit  Wrappixel  to  [Download Free Admin Panel Templates](https://www.wrappixe
 - [Download Free Bootstrap Templates](https://www.wrappixel.com/templates/category/free-bootstrap-templates/?utm_source=github)
 - [Download Free Admin Templates](https://www.wrappixel.com/templates/category/free-admin-panel-templates/)
 
+
+## Hostel Management Additions
+
+This fork introduces a basic Express backend and React frontend located in `/server` and `/client`. To start the API server:
+
+```bash
+cd server
+npm install
+cp .env.example .env # edit with your database settings
+npm start
+```
+
+The API exposes `GET /api/hostels` and `POST /api/hostels` for managing hostels.
+
+The React client contains `HostelList` and `AddHostelWizard` components under `client/src/components`.
+
+To preview the new interface during development:
+
+```bash
+cd client
+npm install
+npm start
+```
+
+Vite will start on <http://localhost:5173> and proxy API requests to the Express server.
